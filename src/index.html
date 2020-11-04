@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Image Tiles Scroll Animation | Demo 1 | Codrops</title>
+		<meta name="description" content="Scroll animations for image grids powered by Locomotive Scroll" />
+		<meta name="keywords" content="locomotive scroll, scroll animation, website, javascript, demo" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://use.typekit.net/jsq0suq.css">
+	<link rel="stylesheet" href="https://use.typekit.net/cze1cgq.css">
+		<link rel="stylesheet" href="https://use.typekit.net/rmd7deq.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	<script>
+	document.documentElement.className = "js";
+	var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+	supportsCssVars() || alert("Please view this in a modern browser that supports CSS Variables.");
+	</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="demo-1 loading">
+		<main data-scroll-container>
+			<div class='fullpage'>
+				<img src='img/demo1/first.jpg'>
+			</div>
+			<section id="header" class="content">
+		
+				<p class="content__pretitle">Behind The Scenes</p>
+				<h1 class="content__title" data-scroll data-scroll-speed="2">About</h1>
+			</section>
+			<video class='some image' playsinline autoplay muted loop="controls">
+					    <source src="img/demo1/super8.webm" type="video/webm"  />
+					</video>
+			<section class="content content--numbered">
+				<p class="content__text" data-scroll data-scroll-speed="2">At 3,300 m above sea level, in the Peruvian Andes, indigenous people have been harvesting salt by hand for over 600 years, prior to the Inca times. After many years of struggle and unfair working conditions, the salt workers became owners of the salt mine, creating the comunal company: Marasal. Today they proudly own and operate the salt business. Añay Kachi: The Salt Workers of the Peruvian Andes is a multimedia project that tells the story of the indigenous communities surrounding Maras Salt Pools (Cuzco region).
+</p>
+			</section>
+			<section class="tiles" id="grid">
+				<div class="tiles__wrap">
+					<div class="tiles__line" data-scroll data-scroll-speed="1" data-scroll-target="#grid" data-scroll-direction="horizontal">
+						<div class="tiles__line-img" style="background-image:url(img/demo1/first.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/peru2.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/peru3.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/peru5.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/peru4.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/peru6.jpg)"></div>
+					</div>
+					<div class="tiles__line" data-scroll data-scroll-speed="2" data-scroll-target="#grid" data-scroll-direction="horizontal">
+						<div class="tiles__line-img" style="background-image:url(img/demo1/peru6.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/first.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/peru7.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/peru8.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/peru9.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/17.jpg)"></div>
+					</div>
+					<div class="tiles__line" data-scroll data-scroll-speed="1" data-scroll-target="#grid" data-scroll-direction="horizontal">
+						<div class="tiles__line-img" style="background-image:url(img/demo1/peru7.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/peru10.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/peru11.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/peru14.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/peru13.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/peru15.jpg)"></div>
+					</div>
+				</div>
+			</section>
+			<section class="content content--feature">
+				<p class="content__breakout content__breakout--big" data-scroll data-scroll-speed="3" data-scroll-direction="horizontal">this project explores the cultural meaning</p>
+				<p class="content__breakout content__breakout--medium" data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">documenting the daily life of the salt workers.</p>
+			</section>
+			<section class="content content--numbered">
+				<p class="content__text" data-scroll data-scroll-speed="2">With the help of Maricarmen Monzilla, our local collaborator and direct contact with the salt mine, Cristobal Ruiz, Thomas Silcock and Toto Thots spent one month in Maras, Peru documenting the daily life of the salt workers. <br>Through the eyes of Laurita, a 65-year-old indigenous salt worker, this project explores the cultural meaning that this place has for the people of Maras and how it is shaping the future of the next generations. <br>Añay Kachi: The Salt Workers of the Peruvian Andes includes a 13 minute Short Documentary, Historic Images captured on 35mm and super 8mm film, Sound Recordings and Illustrations that can all be seen through this website. 
+</p>
+			</section>
+			<section class="tiles tiles--columns" id="grid3">
+				<div class="tiles__wrap">
+					<div class="tiles__line" data-scroll data-scroll-speed="1" data-scroll-target="#grid3" data-scroll-direction="vertical">
+						<div class="tiles__line-img" style="background-image:url(img/demo2/20.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo2/19.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo2/18.jpg)"></div>
+					</div>
+					<div class="tiles__line" data-scroll data-scroll-speed="-1" data-scroll-target="#grid3" data-scroll-direction="vertical">
+						<div class="tiles__line-img" style="background-image:url(img/demo2/16.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo2/3.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo2/14.jpg)"></div>
+					</div>
+					<div class="tiles__line" data-scroll data-scroll-speed="1" data-scroll-target="#grid3" data-scroll-direction="vertical">
+						<div class="tiles__line-img" style="background-image:url(img/demo2/12.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo2/11.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo2/10.jpg)"></div>
+					</div>
+					<div class="tiles__line" data-scroll data-scroll-speed="-1" data-scroll-target="#grid3" data-scroll-direction="vertical">
+						<div class="tiles__line-img" style="background-image:url(img/demo2/8.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo2/7.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo2/6.jpg)"></div>
+					</div>
+				</div>
+			</section>
+			<section class="content">
+				<div class="frame frame--footer">
+				<p class="content__text" data-scroll data-scroll-speed="2">Photographs by Cristobal Ruiz <br>Illustrations by Victoria Leader.</p>
+				</div>
+			</section>
+		</main>
+		<script src="js/index.js"></script>
+	</body>
+</html>
