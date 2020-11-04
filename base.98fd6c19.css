@@ -25,7 +25,7 @@ body {
 }
 
 video{
-	width: 85%;
+	width: 75%;
     margin: 0 auto;
     text-align: center;
     display: block;
@@ -45,7 +45,7 @@ box-shadow: inset 0px -6px 5px -2px rgba(0,0,0,0.45);
 .fullpage img{
 	overflow: hidden;
 	width: 100%;
-	bottom: -500px;
+	bottom: -310px;
 	position: absolute;
 }
 
@@ -56,6 +56,7 @@ box-shadow: inset 0px -6px 5px -2px rgba(0,0,0,0.45);
 	margin: 0 auto;
 	fill: currentColor;
 }
+
 
 .codrops-header {
 	position: relative;
@@ -97,6 +98,64 @@ box-shadow: inset 0px -6px 5px -2px rgba(0,0,0,0.45);
 	padding: 0.25em;
 }
 
+	.content-1 {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		min-height: 100vh;
+		text-align: left;
+	}
+
+	.content--fixed {
+		position: fixed;
+		z-index: 10000;
+		top: 0;
+		left: 0;
+		display: grid;
+		align-content: space-between;
+		width: 100%;
+		max-width: none;
+		min-height: 0;
+		height: 100vh;
+		padding: 2.5rem 3.6rem 3rem;
+		pointer-events: none;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto auto auto;
+		grid-template-areas: 'codropsheader info'
+							'... ...'
+							'github ...';
+	}
+	.codrops-header {
+		grid-area: codropsheader;
+		padding: 0;
+		justify-content: start;
+	}
+	.codrops-links {
+		margin: 0;
+	}
+	.content--fixed a {
+		pointer-events: auto;
+	}
+	.info {
+		margin: 0;
+		justify-self: end;
+	}
+	.github {
+		grid-area: github;
+		justify-self: start;
+	}
+
+	.info {
+		margin: 0;
+		justify-self: end;
+	}
+
+	.info {
+	margin: 0.5rem 0;
+	display: flex;
+}
 
 /* Page Loader */
 .js .loading::before,
@@ -193,7 +252,7 @@ main {
 
 .content {
 	padding: 3rem;
-	min-height: 90vh;
+	min-height: 50vh;
 	display: flex;
 	position: relative;
 	flex-direction: column;
@@ -219,20 +278,24 @@ main {
 
 .content__pretitle {
 	margin-top: auto;
-	font-size: 1.85rem;
-	color: var(--color-alt);
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;;
 }
 
 .content__pretitle::before {
-	content: "\2015";
+	content: "";
 	margin-right: 0.25rem;
 }
 
 .content__title {
-	font-size: 9vw;
+	font-size: 11vw;
 	line-height: 0.8;
-	margin: 0 0 3rem 0;
+	text-align: center;
+	margin: 0 auto;
 	font-weight: 400;
+	padding-bottom: 20px;
+	padding-top: 20px;
 	font-family: rigatoni, serif;
 	max-width: 800px;
 	will-change: transform;
@@ -249,14 +312,17 @@ main {
 
 .content__text--centered {
 	margin: auto;
+	width: 50%;
+	font-size: 20px;
 }
 
 .content__breakout {
 	margin: 0 -3rem;
 	white-space: nowrap;
 	text-transform: uppercase;
-	font-family: span, serif;
+	font-family: Rigatoni, serif;
 	font-weight: 200;
+	line-height: 130px;
 	font-style: italic;
 	color: #211f1b;
 }
@@ -451,7 +517,7 @@ main {
 	padding: 3rem;
 	margin: 0;
 	line-height: 0.8;
-	font-family: span, serif;
+	font-family: Rigatoni, serif;
 	font-weight: 700;
 	font-style: normal;
 }
@@ -550,7 +616,7 @@ html.has-scroll-dragging {
 
 @media screen and (min-width: 53em) {
 	.frame {
-		display: grid;
+
 		align-content: space-between;
 		width: 100%;
 		grid-gap: 5vw;
